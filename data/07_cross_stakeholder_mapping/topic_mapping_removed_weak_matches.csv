@@ -1,0 +1,2 @@
+mapping_id,mapping_status,user_topic_id,user_topic_label,user_valid_rows_common_window,developer_topic_id,developer_topic_label,developer_valid_rows_common_window,mapping_rationale,manual_review_status,validation_decision,validation_note
+M041,weak_match,20,Language,15100,14.0,Testing Requirements,3734.0,Language/localization may surface as testing or publishing requirements; requires manual confirmation.,validated_conservative,remove,Removed because the semantic relation was too indirect for reviewer-facing quantitative alignment analysis.

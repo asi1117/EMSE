@@ -1,0 +1,81 @@
+stakeholder,topic_id,topic_label,rows,valid_rows
+user,0,Adventure Games,15994,15496
+user,1,Audio Interactions,20952,20045
+user,2,Comfort Issues,21312,20832
+user,3,Customization,35389,34204
+user,4,Female Character,22275,21710
+user,5,Game Content,31509,30457
+user,6,Game Graphics,40295,39023
+user,7,Game Interface,16777,16194
+user,8,Game Mechanics,34943,33917
+user,9,Game Story,15153,14724
+user,10,Game Strategy,20063,19616
+user,11,Game Style,36892,35701
+user,12,Gameplay Complexity,20076,19335
+user,13,Golfing Game,18327,17527
+user,14,Hardware Support,24338,23716
+user,15,Horror Game,18343,17692
+user,16,Input Methods,16894,16274
+user,17,Installation,20273,19606
+user,18,Interaction Methods,14811,14373
+user,19,Kids and Students,18433,17988
+user,20,Language,15472,15100
+user,21,LGBTQ,18033,17351
+user,22,Light Design,22623,22118
+user,23,Linux OS,19264,18627
+user,24,Mac OS,22207,21350
+user,25,Motion Design,28577,27447
+user,26,Multiplayer,19844,19360
+user,27,Network connect,20115,19575
+user,28,Performance Issues,21863,20920
+user,29,Physical Reactions,19265,18853
+user,30,Play Scale,14706,14143
+user,31,Pricing,34304,33239
+user,32,Privacy & Security,25653,25099
+user,33,Rhythm Games,20502,19649
+user,34,Scene Design,20279,19797
+user,35,Setup,16722,16211
+user,36,Sound Design,15394,14977
+user,37,Sports Games,19009,18255
+user,38,Target Tracking,19412,18617
+user,39,Technical Issues,17982,17371
+user,40,Troubleshooting,20541,19905
+user,41,UI Design,18922,18191
+user,42,VR Elements,14303,13775
+developer,0,Layout Challenges,10528,5950
+developer,1,App Development ,9451,5460
+developer,2,Parallel Rendering ,8503,4196
+developer,3,Input Methods,10573,5342
+developer,4,Graphics Optimization,10573,5750
+developer,5,Cybersickness,9627,4490
+developer,6,Implementation Challenges,10298,5053
+developer,7,Object Tracking,9206,4398
+developer,8,Safety ,12442,6129
+developer,9,Customization,25309,12511
+developer,10,Control Issues,8985,4713
+developer,11,Rendering Issues,8923,4314
+developer,12,Interaction Mechanics,7594,4010
+developer,13,Support Challenges,8607,4109
+developer,14,Testing Requirements,8975,3734
+developer,15,Server Management,10770,5885
+developer,16,UE Issues,10743,5192
+developer,17,Installation and Setup,7487,4215
+developer,18,Streaming and Mapping,10072,4833
+developer,19,Beta Testing,8288,4544
+developer,20,Player Interaction,8978,5079
+developer,21,Bug Reporting ,17561,8063
+developer,22,Troubleshooting,10958,5773
+developer,23,Horror Game ,7691,3745
+developer,24,Environment & Interface.,8080,3661
+developer,25,IOS Development,7967,4349
+developer,26,Educational Use,13418,6960
+developer,27,Tools Limitation,15108,7174
+developer,28,Physics & Hardware,9094,5263
+developer,29,Technical Challenges,6859,3852
+developer,30,Hardware Optimization,7863,3175
+developer,31,Compatibility Issues,7808,4204
+developer,32,Game Elements,9626,5158
+developer,33,Cross-platform,14352,7328
+developer,34,Audio and Visual,10113,4604
+developer,35,Multiplayer,8061,3125
+developer,36,Controller,8623,4461
