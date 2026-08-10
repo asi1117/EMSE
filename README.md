@@ -44,11 +44,7 @@ EMSE_Replication_Package/
     09_document_topic_assignment_validation/
       coding protocol, validation samples, evaluator files, and kappa output
     README_LARGE_FILES.md
-  scripts/
-    reproduce_paper_results.py
-    original scripts used during analysis
-  docs/
-    optional notes and replication documentation
+
 ```
 
 ## Quick Start
@@ -96,17 +92,7 @@ The following files are needed only for full end-to-end reruns from raw/per-docu
 
 See `data/README_LARGE_FILES.md` for details.
 
-## Main Scripts
 
-- `scripts/reproduce_paper_results.py`: verifies the main revised paper statistics using included derived outputs.
-- `scripts/run_cross_stakeholder_statistics.py`: original script used to compute alignment, gap, and lagged-correlation outputs.
-- `scripts/calculate_document_topic_assignment_kappa.py`: original script used for document-to-topic assignment agreement.
-- `scripts/build_monthly_topic_impact.py`: original script used to construct monthly topic-impact data.
-- `scripts/build_final_merged_topic_impact.py`: original script used to construct final merged-topic monthly impact data.
-- `scripts/create_initial_topic_mapping.py`: original script used to generate initial topic-mapping candidates.
-- `scripts/validate_topic_mapping.py`: original script used to remove weak or indirect mappings.
-
-Some original scripts preserve local paths from the analysis machine for provenance. For reviewer verification, use `scripts/reproduce_paper_results.py`, which relies on relative paths inside this package.
 
 ## Citation
 
