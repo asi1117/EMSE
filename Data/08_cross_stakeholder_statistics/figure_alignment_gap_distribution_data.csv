@@ -1,0 +1,42 @@
+display_order,developer_mean_relative_impact,developer_topic_label,discussion_salience_gap_log2_user_over_developer,mapping_id,stakeholder_alignment_score,user_mean_relative_impact,user_topic_label,pair_label,user_to_developer_salience_ratio,salience_class,near_balanced_gap_0_10,near_balanced_gap_0_25,near_balanced_gap_0_50
+1,0.0378243686618,Cross-platform,-0.978714952582,M038,0.673239897578,0.0191932769436,Linux OS,Linux OS - Cross-platform,0.507431521612,Developer-salient,False,False,False
+2,0.0287735150285,Player Interaction,-0.886972199049,M013,0.701929025957,0.0155592150051,Interaction Methods,Interaction Methods - Player Interaction,0.540747801933,Developer-salient,False,False,False
+3,0.0273791225709,Game Elements,-0.865784862209,M016,0.70863415666,0.0150242330885,VR Elements,VR Elements - Game Elements,0.548747793141,Developer-salient,False,False,False
+4,0.0421045486106,Bug Reporting,-0.862217442464,M035,0.709765976521,0.0231619810953,Troubleshooting,Troubleshooting - Bug Reporting,0.550106386603,Developer-salient,False,False,False
+5,0.0357554889224,Educational Use,-0.830062743732,M037,0.720003914218,0.0201126333624,Kids and Students,Kids and Students - Educational Use,0.562504778119,Developer-salient,False,False,False
+6,0.0670922163396,Customization,-0.786779513055,M001,0.733885972887,0.0388891011448,Customization,Customization - Customization,0.579636554982,Developer-salient,False,False,False
+7,0.0378243686618,Cross-platform,-0.695034852816,M039,0.763672542292,0.0233639005558,Mac OS,Mac OS - Cross-platform,0.617694396041,Developer-salient,False,False,False
+8,0.0316921176459,Server Management,-0.668855412217,M027,0.772257077769,0.0199345170053,Multiplayer,Multiplayer - Server Management,0.629005522079,Developer-salient,False,False,False
+9,0.0316921176459,Server Management,-0.590647518504,M025,0.798109281548,0.0210449859181,Network connect,Network connect - Server Management,0.664044799832,Developer-salient,False,False,False
+10,0.0277893008294,Input Methods,-0.583877661981,M010,0.80036096452,0.0185401366221,Input Methods,Input Methods - Input Methods,0.667168157134,Developer-salient,False,False,False
+11,0.0302639858549,Layout Challenges,-0.557905766509,M008,0.809018713157,0.0205579476031,UI Design,UI Design - Layout Challenges,0.679287510309,Developer-salient,False,False,False
+12,0.0255997907816,Audio and Visual,-0.494306453776,M005,0.830342917061,0.0181733648808,Sound Design,Sound Design - Audio and Visual,0.709902867412,Developer-salient,False,False,True
+13,0.0311251633473,Troubleshooting,-0.451486169413,M031,0.844791455791,0.0227614937472,Performance Issues,Performance Issues - Troubleshooting,0.731289133924,Developer-salient,False,False,True
+14,0.0267186078123,UE Issues,-0.448142706056,M033,0.845922500724,0.0195843620125,Technical Issues,Technical Issues - UE Issues,0.732985870758,Developer-salient,False,False,True
+15,0.0211123479204,Interaction Mechanics,-0.440317755623,M012,0.848571141447,0.0155592150051,Interaction Methods,Interaction Methods - Interaction Mechanics,0.736972271584,Developer-salient,False,False,True
+16,0.0311251633473,Troubleshooting,-0.426322753069,M034,0.853313665075,0.0231619810953,Troubleshooting,Troubleshooting - Troubleshooting,0.744156129789,Developer-salient,False,False,True
+17,0.0273791225709,Game Elements,-0.314213309907,M015,0.891530398922,0.0220207392642,Gameplay Complexity,Gameplay Complexity - Game Elements,0.804289443805,Developer-salient,False,False,True
+18,0.0216258525525,Installation and Setup,-0.313564467458,M029,0.891752630233,0.017401269266,Setup,Setup - Installation and Setup,0.804651248959,Developer-salient,False,False,True
+19,0.0225686306106,Controller,-0.283667008027,M011,0.902004018618,0.0185401366221,Input Methods,Input Methods - Controller,0.821500291364,Developer-salient,False,False,True
+20,0.025036165277,Streaming and Mapping,-0.250537061086,M024,0.913388028395,0.0210449859181,Network connect,Network connect - Streaming and Mapping,0.840583439413,Developer-salient,False,False,True
+21,0.0255997907816,Audio and Visual,-0.223254166762,M006,0.922780038907,0.0219295750048,Audio Interactions,Audio Interactions - Audio and Visual,0.856631024525,Near-balanced,False,True,True
+22,0.0279103857084,Physics & Hardware,-0.221386304647,M018,0.923423562557,0.0239398772876,Hardware Support,Hardware Support - Physics & Hardware,0.857740825866,Near-balanced,False,True,True
+23,0.0320397381545,Safety,-0.181093198187,M036,0.937320158903,0.0282601507027,Privacy & Security,Privacy & Security - Safety,0.882034383882,Near-balanced,False,True,True
+24,0.0216258525525,Installation and Setup,-0.123640023555,M028,0.957175840508,0.0198496970033,Installation,Installation - Installation and Setup,0.917868877316,Near-balanced,False,True,True
+25,0.023140025162,Cybersickness,-0.119826787309,M023,0.958495057745,0.0212957220403,Physical Reactions,Physical Reactions - Cybersickness,0.920298136724,Near-balanced,False,True,True
+26,0.023140025162,Cybersickness,-0.0363343448935,M022,0.987408141203,0.0225645199832,Comfort Issues,Comfort Issues - Cybersickness,0.975129448875,Near-balanced,True,True,True
+27,0.022831747446,Object Tracking,-0.0183279502643,M020,0.993648101902,0.0225435283181,Target Tracking,Target Tracking - Object Tracking,0.987376387704,Near-balanced,True,True,True
+28,0.0191545093295,Horror Game,0.0215890022226,M049,0.992517961611,0.0194432996178,Horror Game,Horror Game - Horror Game,1.01507688259,Near-balanced,True,True,True
+29,0.0228669838309,IOS Development,0.0310150633899,M040,0.989251412092,0.0233639005558,Mac OS,Mac OS - IOS Development,1.0217307507,Near-balanced,True,True,True
+30,0.0221839095789,Rendering Issues,0.0445236927789,M004,0.984570488549,0.0228792115219,Light Design,Light Design - Rendering Issues,1.03134262428,Near-balanced,True,True,True
+31,0.018709654522,Technical Challenges,0.0659192121389,M032,0.977158115821,0.0195843620125,Technical Issues,Technical Issues - Technical Challenges,1.04675166446,Near-balanced,True,True,True
+32,0.0191632830647,Environment & Interface,0.0776890234859,M007,0.973081540769,0.0202235149822,Game Interface,Game Interface - Environment & Interface,1.05532621492,Near-balanced,True,True,True
+33,0.0191632830647,Environment & Interface,0.101351495069,M009,0.964888687613,0.0205579476031,UI Design,UI Design - Environment & Interface,1.07277795426,Near-balanced,False,True,True
+34,0.02180546168,Compatibility Issues,0.134726220789,M019,0.953341353332,0.0239398772876,Hardware Support,Hardware Support - Compatibility Issues,1.09788444927,Near-balanced,False,True,True
+35,0.0169971377915,Multiplayer,0.229976824328,M026,0.920464457121,0.0199345170053,Multiplayer,Multiplayer - Multiplayer,1.17281610878,Near-balanced,False,True,True
+36,0.018709654522,Technical Challenges,0.282812319996,M030,0.902297394835,0.0227614937472,Performance Issues,Performance Issues - Technical Challenges,1.21656408568,User-salient,False,False,True
+37,0.0309521914208,Graphics Optimization,0.377346977882,M002,0.869962006444,0.0402053791204,Game Graphics,Game Graphics - Graphics Optimization,1.29895097163,User-salient,False,False,True
+38,0.0273791225709,Game Elements,0.459497554019,M014,0.842082981478,0.0376480141204,Game Mechanics,Game Mechanics - Game Elements,1.37506284296,User-salient,False,False,True
+39,0.0211123479204,Interaction Mechanics,0.497642501264,M021,0.829220230935,0.0298086188695,Motion Design,Motion Design - Interaction Mechanics,1.41190449217,User-salient,False,False,True
+40,0.0166349910763,Hardware Optimization,0.525194664927,M017,0.819965251751,0.0239398772876,Hardware Support,Hardware Support - Hardware Optimization,1.4391277505,User-salient,False,False,False
+41,0.0221839095789,Rendering Issues,0.857874892879,M003,0.711144814809,0.0402053791204,Game Graphics,Game Graphics - Rendering Issues,1.81236670554,User-salient,False,False,False
