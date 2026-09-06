@@ -2,9 +2,7 @@
 
 ## Overview
 
-This directory contains the compact public data package accompanying the manuscript. It provides quality-controlled inspection samples, final topic labels, monthly experiment inputs, validated cross-stakeholder mappings, statistical results, and document-topic assignment validation materials.
-
-All released analytical data use an inclusive cutoff of **July 31, 2024**. The common comparison window for the user and developer corpora is **June 2015 through July 2024** (110 months).
+This directory contains the compact public data package accompanying the manuscript. Because the complete analysis-ready datasets exceed GitHub's file-size limits, they cannot currently be uploaded to the repository. Researchers who require the complete datasets may contact the corresponding author using the contact information provided in the manuscript. The public package includes quality-controlled inspection samples, final topic labels, monthly experiment inputs, validated cross-stakeholder mappings, statistical results, and document-topic assignment validation materials.
 
 ## Availability of the complete data
 
@@ -71,9 +69,6 @@ Positive `best_lag_months` values mean that the developer series leads the user 
 
 The unique comparison key for this validation is the combination of `stakeholder`, `document_id`, and `assigned_topic_label`.
 
-### `sample_selection_summary.json`
-
-Records the deterministic sampling design, topic-pair allocation, data cutoff, and checks used to construct the public 1,000-record samples.
 
 ## Data format and interpretation
 
@@ -83,6 +78,4 @@ Records the deterministic sampling design, topic-pair allocation, data cutoff, a
 - Platform-level provenance is not included in this release by design.
 - The corpora are not platform-balanced or demographically normalized. Results describe public discussion in the collected sources and should not be interpreted as platform-invariant effects or as representative of all VR application domains.
 
-## Citation
 
-When using these materials, cite the accompanying article and identify the data cutoff as July 2024. Please also state whether the compact public samples or the complete data obtained from the corresponding author were used.
