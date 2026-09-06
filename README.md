@@ -1,101 +1,88 @@
-# EMSE-D-26-00378 Replication Package
+# Data Guide
 
-This repository contains replication materials for:
+## Overview
 
-**Mind the Gap: A Decade-Scale Empirical Study of Multi-Stakeholder Dynamics in VR Ecosystem**
+This directory contains the compact public data package accompanying the manuscript. It provides quality-controlled inspection samples, final topic labels, monthly experiment inputs, validated cross-stakeholder mappings, statistical results, and document-topic assignment validation materials.
 
-The package supports verification of the revised cross-stakeholder analysis, longitudinal topic-impact analysis, and document-to-topic assignment validation reported in the manuscript.
+All released analytical data use an inclusive cutoff of **July 31, 2024**. The common comparison window for the user and developer corpora is **June 2015 through July 2024** (110 months).
 
-## What This Package Contains
+## Availability of the complete data
 
-This GitHub-ready package includes derived data tables, validation samples, statistical outputs, and reproduction scripts. It is designed so reviewers can verify the main revised claims without downloading the full raw corpus.
+The complete analysis-ready corpora and original source exports are not included in the public package because of repository file-size limits and redistribution constraints. The full processed corpora contain **389,473 developer posts** and **913,322 user reviews**.
 
-The full raw and per-document topic-assignment files are large and exceed normal GitHub file limits. They should be hosted with Git LFS or an archival service such as Zenodo/OSF if full end-to-end reruns are required.
+Researchers who require the complete data for verification or non-commercial research may contact the corresponding author using the contact information in the accompanying article. A request should identify the article, the requester's institutional affiliation, and the intended research use. Access is available upon reasonable request and remains subject to applicable platform terms, privacy considerations, and redistribution restrictions.
 
-## Key Reproducible Claims
+The 1,000-record samples in this package support inspection and auditing. They are not substitutes for the complete analytical corpora.
 
-The package supports checking the following manuscript claims:
+## Directory contents
 
-- Common observation window for cross-stakeholder temporal analysis: **June 2015 to July 2024**.
-- Final topic inventory in the common window: **43 user topics** and **37 developer topics**.
-- Validated cross-stakeholder mapping: **41 user-developer topic pairs**.
+### `01_final_processed/`
 
-## Repository Structure
+- `Developer_posts_sample_1000.csv`: 1,000 quality-controlled developer posts.
+- `User_reviews_sample_1000.csv`: 1,000 quality-controlled user reviews.
 
-```text
-EMSE_Replication_Package/
-  README.md
-  REPRODUCE.md
-  requirements.txt
-  data_manifest.tsv
-  .gitignore
-  .gitattributes
-  data/
-    03_topic_keywords_labels/
-      topic keyword and label files
-    05_samples_and_diagnostics/
-      1,000-row public samples for inspection
-    06_experiment_inputs/
-      monthly topic-impact inputs and final-topic inventory
-    07_cross_stakeholder_mapping/
-      initial and validated user-developer topic mappings
-    08_cross_stakeholder_statistics/
-      alignment, gap, lagged-correlation, and FDR outputs
-    09_document_topic_assignment_validation/
-      coding protocol, validation samples, evaluator files, and kappa output
-    README_LARGE_FILES.md
+The two samples are stratified over the 41 validated cross-stakeholder topic mappings. The fields `mapping_id` and `within_mapping_sample_index` connect records to the corresponding topic-pair sampling position. This alignment is at the topic-pair level and does not indicate that an individual user review and developer post describe the same event.
 
-```
+### `02_final_topic_assignments/`
 
-## Quick Start
+- `Developer_lda_topics_sample_1000.csv`: dominant-topic assignments and keywords for the sampled developer posts.
+- `User_lda_topics_sample_1000.csv`: dominant-topic assignments and topic-distribution values for the sampled user reviews.
 
-Install dependencies:
+These files contain exactly the same sampled records as `01_final_processed/`. The initial LDA solutions contain 40 developer topics and 50 user topics. Semantically overlapping topics were consolidated into the 37 developer topics and 43 user topics reported in the manuscript.
 
-```bash
-python -m pip install -r requirements.txt
-```
+### `03_topic_keywords_labels/`
 
-Run the paper-result verification script:
+- `Developer_topic_merged_labels_final.csv`: the 37 final developer-topic labels, keywords, definitions, and common-window counts.
+- `User_topic_merged_labels_final.csv`: the 43 final user-topic labels, keywords, definitions, and common-window counts.
 
-```bash
-python scripts/reproduce_paper_results.py
-```
+`Rows_Common_Window` records the number of rows assigned to a final topic in the common window. `Valid_Rows_Common_Window` records the observations retained after the date and validity checks used for the monthly analyses.
 
-Expected output includes the validated mapping counts, alignment statistics, and lag-pattern counts. If final evaluator decision files are present, the script also recomputes document-to-topic validation agreement.
+### `06_experiment_inputs/`
 
-## Data Scope
+- `monthly_final_topic_impact_common_window.csv`: the primary long-format monthly dataset for both stakeholder groups. It contains absolute impact, relative impact, and monthly document counts.
+- `final_topic_inventory_common_window.csv`: the final 37-topic developer inventory and 43-topic user inventory.
+- `developer_final_topic_relative_common_window.csv`: developer relative-impact data in wide format.
+- `user_final_topic_relative_common_window.csv`: user relative-impact data in wide format.
 
-The study analyzes public data from three major consumer VR platforms:
+For a final topic `z` in month `m`, `absolute_impact` is the number of documents assigned to `z` as their dominant topic. `relative_impact` is `absolute_impact` divided by the total number of valid documents for that stakeholder group in month `m`.
 
-- Meta
-- SteamVR
-- Viveport
+### `07_cross_stakeholder_mapping/`
 
-Developer-side discussions come from public developer forums:
+- `topic_mapping_validated.csv`: the complete validated mapping inventory, containing 41 retained user-developer topic pairs and 12 user-salient topics retained for gap discussion only.
+- `topic_mapping_validated_matched_only.csv`: the 41 matched topic pairs used in the alignment, salience-gap, lagged-correlation, and paired-sample analyses.
 
-- Meta Forum
-- SteamVR Forum
-- HTC Vive Forum
+### `08_cross_stakeholder_statistics/`
 
-The corpus is not genre-stratified. Because these consumer VR platforms are dominated by gaming and entertainment applications, the findings should be interpreted as evidence about public consumer VR discourse rather than all VR application domains.
+- `alignment_gap_and_best_lag_validated_mapping.csv`: alignment scores, salience gaps, best lags, and permutation-test results for the 41 validated pairs.
+- `lagged_correlation_all_lags_validated_mapping.csv`: Spearman correlations for lags from -12 to +12 months.
+- `figure_alignment_gap_distribution_data.csv`: plotting data for the alignment and salience-gap figure.
+- `pair_level_maxstat/`: pair-level exact maximum-statistic results for the primary ±12-month analysis and the ±6-month robustness analysis.
+- `top_aligned_topic_pairs_validated_mapping.csv`: the most closely aligned pairs.
+- `top_developer_salient_topic_pairs_validated_mapping.csv`: pairs with greater developer salience.
+- `top_user_salient_topic_pairs_validated_mapping.csv`: pairs with greater user salience.
 
-Public developer forums also do not capture internal issue trackers, private product-planning processes, or closed development workflows. Low public discussion volume should therefore not be interpreted as evidence that developers do not address a topic internally.
+Positive `best_lag_months` values mean that the developer series leads the user series under the lag convention used in the analysis; negative values mean that the user series leads.
 
-## Large Files Not Included in the Standard GitHub Package
+### `09_document_topic_assignment_validation/`
 
-The following files are needed only for full end-to-end reruns from raw/per-document data and should be stored via Git LFS or an external archive:
+- `documents_blind_review_A.csv`: 240 assignments evaluated by reviewer A.
+- `documents_blind_review_B.csv`: the same 240 assignments evaluated independently by reviewer B.
+- `documents_disagreements_for_adjudication.csv`: the 14 reviewer disagreements and their final adjudication decisions.
 
-- `data/01_public_raw/User_reviews.csv`
-- `data/01_public_raw/Developer_posts.csv`
-- `data/02_final_topic_assignments/User_lda_topics.csv`
-- `data/02_final_topic_assignments/Developer_lda_topics.csv`
+The unique comparison key for this validation is the combination of `stakeholder`, `document_id`, and `assigned_topic_label`.
 
-See `data/README_LARGE_FILES.md` for details.
+### `sample_selection_summary.json`
 
+Records the deterministic sampling design, topic-pair allocation, data cutoff, and checks used to construct the public 1,000-record samples.
 
+## Data format and interpretation
+
+- CSV files are encoded as UTF-8 and include a header row.
+- Dates and monthly periods use UTC-derived timestamps or `YYYY-MM` notation as indicated by the column name.
+- Missing evaluator notes are intentional when no explanatory note was entered.
+- Platform-level provenance is not included in this release by design.
+- The corpora are not platform-balanced or demographically normalized. Results describe public discussion in the collected sources and should not be interpreted as platform-invariant effects or as representative of all VR application domains.
 
 ## Citation
 
-If this replication package is used, please cite the associated manuscript:
-
-Lu et al. *Mind the Gap: A Decade-Scale Empirical Study of Multi-Stakeholder Dynamics in VR Ecosystem*. EMSE-D-26-00378.
+When using these materials, cite the accompanying article and identify the data cutoff as July 2024. Please also state whether the compact public samples or the complete data obtained from the corresponding author were used.
