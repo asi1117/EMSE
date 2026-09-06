@@ -1,16 +1,12 @@
 # Data Guide
 
-## Overview
+## Overview and data availability
 
-This directory contains the compact public data package accompanying the manuscript. Because the complete analysis-ready datasets exceed GitHub's file-size limits, they cannot currently be uploaded to the repository. Researchers who require the complete datasets may contact the corresponding author using the contact information provided in the manuscript. The public package includes quality-controlled inspection samples, final topic labels, monthly experiment inputs, validated cross-stakeholder mappings, statistical results, and document-topic assignment validation materials.
+This directory contains the compact public data package accompanying the manuscript. It includes quality-controlled inspection samples, final topic labels, monthly experiment inputs, validated cross-stakeholder mappings, statistical results, and document-topic assignment validation materials. All released analytical data use an inclusive cutoff of **July 31, 2024**, and the common comparison window for the user and developer corpora is **June 2015 through July 2024** (110 months).
 
-## Availability of the complete data
+The complete analysis-ready corpora and original source exports exceed GitHub's file-size limits and are therefore not included in this repository. The full processed corpora contain **389,473 developer posts** and **913,322 user reviews**. Researchers who require the complete data for verification or non-commercial research may contact the corresponding author using the contact information provided in the accompanying article. Requests should identify the article, the requester's institutional affiliation, and the intended research use. Access is available upon reasonable request and remains subject to applicable platform terms, privacy considerations, and redistribution restrictions.
 
-The complete analysis-ready corpora and original source exports are not included in the public package because of repository file-size limits and redistribution constraints. The full processed corpora contain **389,473 developer posts** and **913,322 user reviews**.
-
-Researchers who require the complete data for verification or non-commercial research may contact the corresponding author using the contact information in the accompanying article. A request should identify the article, the requester's institutional affiliation, and the intended research use. Access is available upon reasonable request and remains subject to applicable platform terms, privacy considerations, and redistribution restrictions.
-
-The 1,000-record samples in this package support inspection and auditing. They are not substitutes for the complete analytical corpora.
+The 1,000-record samples included here support inspection and auditing; they are not substitutes for the complete analytical corpora.
 
 ## Directory contents
 
